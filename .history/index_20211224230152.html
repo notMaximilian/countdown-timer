@@ -1,0 +1,24 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Christmas Countdown</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    
+         <form id="form-title" onsubmit="return false;">
+            <input onkeyup="setTitle()" onchange="setTitle()" name="title" class="title-text" id="title-text" type="text" value="Name your Timer">
+            <input id="submit" class="hidden-submit" type="submit" onclick="hideForm()">
+         </form>
+         <h1 id="title-desc"></h1>
+
+         <form id="form-month" onsubmit="return false;">
+            <input name="month" class="title-text" id="month-text" type="text" value="Month">
+            <input id="submit" class="hidden-submit" type="submit" onclick="hideMonth()">
+         </form>
+         
+        <h1 id></h1>
+        <h1 id="time-left"></h1>
+        <script src="app.js"></script>
+        <div class="snow" />
+    </body>
+</html>

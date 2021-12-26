@@ -1,0 +1,20 @@
+body{
+    background-color: lightcoral;
+    text-align: center;
+    color:#ffffff;
+    #main-text{
+        font-size: 700%;
+    }
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#main-text{
+    /* font-size: 700%; */
+
+}
+
+#time-left{
+    /* font-size:  500%; */
+}
+
