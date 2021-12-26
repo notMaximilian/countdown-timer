@@ -106,9 +106,6 @@ function setDate(){
         if(date.charAt(0) == "0"){
             month = date.charAt(1)
         }
-        else{
-            month = date.charAt(0)
-        }
     }
 
     //set day

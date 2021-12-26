@@ -1,17 +1,17 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
-        <title>Countdown App</title>
+        <title>Christmas Countdown</title>
         <link rel="stylesheet" href="styles.css"/>
     </head>
     
-         <form id="form-title" onsubmit="return false;" autocomplete="off">
+         <form id="form-title" onsubmit="return false;">
             <input onkeyup="setTitle()" onchange="setTitle()" name="title" class="title-text" id="title-text" type="text" placeholder="Name your Timer">
             <input id="submit" class="hidden-submit" type="submit" onclick="hideForm()">
          </form>
          <h1 id="title-desc"></h1>
 
-         <form id="form-month" onsubmit="return false;" autocomplete="off">
+         <form id="form-month" onsubmit="return false;">
             <input name="month" class="title-text" id="month-text" type="text" placeholder="Enter the date">
             <input id="submit" class="hidden-submit" type="submit" onclick="hideMonth()">
          </form>

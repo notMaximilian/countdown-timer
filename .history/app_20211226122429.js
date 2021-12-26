@@ -102,14 +102,6 @@ function setDate(){
             month = months[monthAbv]
         }
     }
-    else{
-        if(date.charAt(0) == "0"){
-            month = date.charAt(1)
-        }
-        else{
-            month = date.charAt(0)
-        }
-    }
 
     //set day
     for (let x = 3; x < date.length; x++){
@@ -126,13 +118,9 @@ function setDate(){
     }
 
     //set year
-    year = "20" + date.substring(date.length - 2)
-    console.log(year)
+    year = "20" + date.(date.length - 2)
+        
 
-    if (year != "2022" || year != "2021"){
-        year = "2022"
-    }
-    
     var parsedDate = month + '/' + day + '/' + year
     date = new Date(parsedDate)
     timer()

@@ -1,7 +1,7 @@
 var titleText = ""
 var month = ""
 var day = ""
-var year = ""
+var year = "2021"
 let date = new Date()
 
 let months = {
@@ -95,23 +95,13 @@ function setDate(){
     date = document.getElementsByName("month")[0].value;
     date = date.toLowerCase()
 
-    //set month
     if (isNum(date.charAt(0)) == false){
         var monthAbv = date.substring(0, 3)
         if (months.hasOwnProperty(monthAbv)){
             month = months[monthAbv]
         }
     }
-    else{
-        if(date.charAt(0) == "0"){
-            month = date.charAt(1)
-        }
-        else{
-            month = date.charAt(0)
-        }
-    }
 
-    //set day
     for (let x = 3; x < date.length; x++){
         if (isNum(date.charAt(x))){
             if(isNum(date.charAt(x + 1))){
@@ -123,14 +113,6 @@ function setDate(){
                 break;
             }
         }
-    }
-
-    //set year
-    year = "20" + date.substring(date.length - 2)
-    console.log(year)
-
-    if (year != "2022" || year != "2021"){
-        year = "2022"
     }
     
     var parsedDate = month + '/' + day + '/' + year
