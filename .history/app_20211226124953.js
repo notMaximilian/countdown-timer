@@ -102,7 +102,7 @@ function setDate(){
             month = months[monthAbv]
         }
     }
-    //TODO Single digit months printing NaN
+    
     else{
         if(date.charAt(0) == "0"){
             month = date.charAt(1)
